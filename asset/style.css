@@ -1,0 +1,208 @@
+body {
+    font-family: "DM Serif Text",Arial, sans-serif;
+    background-color: #F2AFAF;
+    padding: 15px;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 8px;
+    justify-content: center;
+}
+
+
+h1 {
+    font-family: "Oswald",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:normal;
+    font-weight: 700;
+    padding-top: 10px;
+    font-size: 4rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+
+}
+
+/* Styling untuk Podomoro Timer */
+#timer-podomoro {
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#timer-podomoro h1, h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+h3 {
+    text-align: center;
+    font-size: 10.5rem;
+    margin-bottom: 20px;
+}
+
+#timer-display {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+#timer-podomoro input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#timer-podomoro .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#timer-podomoro button {
+    flex: 1;
+    margin: 0 8px; 
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    
+}
+
+#pause-timer {
+    background-color: #2196f3;
+}
+
+#start-timer {
+    background-color: #4caf50;
+}
+
+#reset-timer {
+    background-color: #f44336;
+}
+
+/* Styling untuk Todo List */
+#todo-list {
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#todo-list h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+#todo-input-container {
+    display: flex; /* Menggunakan Flexbox untuk menyusun input dan tombol secara horizontal */
+    width: 100%;
+    margin-bottom: 20px; /* Jarak antara input + tombol dan daftar todo */
+}
+
+#todo-input {
+    width: calc(100% - 60px);
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#tambah-todo {
+    padding: px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#todo-list-items {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#todo-list-items li {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items:center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#todo-list-items li input[type="checkbox"]{
+    margin-right: 10px;
+}
+#todo-list-items li span{
+    margin-right: 10px;
+}
+#todo-list-items li button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Responsif dengan Bootstrap */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #timer-podomoro,
+    #todo-list {
+        width: 100%;
+    }
+
+    #timer-podomoro button {
+        margin: 5px 0;
+    }
+
+    #todo-input {
+        width: calc(100% - 80px);
+    }
+
+    #tambah-todo {
+        width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    #timer-display {
+        font-size: 2rem;
+    }
+
+    #todo-input {
+        width: calc(100% - 90px);
+    }
+
+    #tambah-todo {
+        width: 80px;
+    }
+}
