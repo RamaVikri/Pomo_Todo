@@ -1,7 +1,11 @@
 Aplikasi Pendukung Belajar
+
 Memiliki fitur timer untuk waktu belajar serta waktu untuk istirahat
+
 Penjelasan Fitur
+
 Menu Pomodoro Timer
+
 Pengguna dapat memasukkan waktu untuk belajar dan istirahat dalam menit dengan maksimal input waktu belajar adalah 25 menit dan istirahat 8 menit. Diharapkan pengguna dapat belajar dengan konsisten dengan waktu tersebut. 
 Jika waktu belajar maupun istirahat telah habis maka akan muncul warning tulisan yang akan memberitahu peringatan tersebut akan hilang secara otomatis selama 10 detik.
 
